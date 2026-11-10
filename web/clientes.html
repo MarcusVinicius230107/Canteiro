@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/estilo.css">
+  <title>Canteiro</title>
+</head>
+<body data-titulo="titulo.clientes">
+  <main>
+    <div class="cabecalho-pagina"><h1 data-i18n="clientes.titulo"></h1><a id="novo" class="btn" href="cliente.html" data-i18n="clientes.novo" hidden></a></div>
+    <div class="filtros"><input id="busca" type="search" data-i18n-ph="clientes.busca" data-i18n-aria="clientes.busca"></div>
+    <p id="msg" class="msg" role="status"></p>
+    <ul id="lista" class="cards"></ul>
+    <p id="vazio" class="msg" hidden data-i18n="clientes.vazio"></p>
+    <div class="paginacao">
+      <button id="anterior" type="button" class="btn btn-sec" data-i18n="plantas.anterior"></button>
+      <span id="pagina"></span>
+      <button id="proxima" type="button" class="btn btn-sec" data-i18n="plantas.proxima"></button>
+    </div>
+  </main>
+  <footer class="rodape"><p data-i18n="rodape"></p></footer>
+  <script src="js/config.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/clientes.js"></script>
+</body>
+</html>

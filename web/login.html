@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/estilo.css">
+  <title>Canteiro</title>
+</head>
+<body data-titulo="titulo.login">
+  <header class="topo"><div class="topo-in">
+    <span class="marca">Canteiro</span>
+    <select id="idioma" aria-label="Idioma / Language"><option value="pt-BR">Português</option><option value="en">English</option></select>
+  </div></header>
+  <main>
+    <form id="form" class="cartao-form estreito">
+      <h1 data-i18n="login.titulo"></h1>
+      <label for="email" data-i18n="login.email"></label>
+      <input id="email" type="email" autocomplete="username" required>
+      <label for="senha" data-i18n="login.senha" style="margin-top:.75rem"></label>
+      <input id="senha" type="password" autocomplete="current-password" required>
+      <p id="msg" class="msg" role="alert"></p>
+      <button class="btn" type="submit" data-i18n="login.entrar"></button>
+    </form>
+  </main>
+  <footer class="rodape"><p data-i18n="rodape"></p></footer>
+  <script src="js/config.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

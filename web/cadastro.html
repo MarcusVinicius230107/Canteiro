@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/estilo.css">
+  <title>Canteiro</title>
+</head>
+<body data-titulo="titulo.cadastro">
+  <main>
+    <form id="form" class="cartao-form" novalidate>
+      <h1 id="titulo-pagina" data-i18n="cadastro.titulo_novo"></h1>
+      <div class="grade-form">
+        <div><label for="nome_popular" data-i18n="campo.nome_popular"></label><input id="nome_popular" maxlength="100" required><span class="erro-campo" id="erro-nome_popular"></span></div>
+        <div><label for="nome_cientifico" data-i18n="campo.nome_cientifico"></label><input id="nome_cientifico" maxlength="150"><span class="erro-campo" id="erro-nome_cientifico"></span></div>
+        <div><label for="categoria" data-i18n="campo.categoria"></label>
+          <select id="categoria" required>
+            <option value="" data-i18n="selecione"></option>
+            <option value="interior" data-i18n="cat.interior"></option>
+            <option value="jardim" data-i18n="cat.jardim"></option>
+            <option value="suculenta" data-i18n="cat.suculenta"></option>
+            <option value="frutifera" data-i18n="cat.frutifera"></option>
+            <option value="aromatica" data-i18n="cat.aromatica"></option>
+          </select><span class="erro-campo" id="erro-categoria"></span></div>
+        <div><label for="luminosidade" data-i18n="campo.luminosidade"></label>
+          <select id="luminosidade" required>
+            <option value="" data-i18n="selecione"></option>
+            <option value="sombra" data-i18n="luz.sombra"></option>
+            <option value="meia_sombra" data-i18n="luz.meia_sombra"></option>
+            <option value="sol_pleno" data-i18n="luz.sol_pleno"></option>
+          </select><span class="erro-campo" id="erro-luminosidade"></span></div>
+        <div><label for="preco" data-i18n="campo.preco"></label><input id="preco" type="number" min="0" step="0.01" inputmode="decimal" required><span class="erro-campo" id="erro-preco"></span></div>
+        <div><label for="estoque" data-i18n="campo.estoque"></label><input id="estoque" type="number" min="0" step="1" inputmode="numeric" required><span class="erro-campo" id="erro-estoque"></span></div>
+        <div><label for="data_entrada" data-i18n="campo.data_entrada"></label><input id="data_entrada" type="date" required><span class="erro-campo" id="erro-data_entrada"></span></div>
+        <label class="check"><input id="pet_seguro" type="checkbox"><span data-i18n="campo.pet_seguro"></span></label>
+        <div class="largo"><label for="observacoes" data-i18n="campo.observacoes"></label><textarea id="observacoes" rows="3" maxlength="500"></textarea><span class="erro-campo" id="erro-observacoes"></span></div>
+      </div>
+      <p id="msg" class="msg" role="alert"></p>
+      <div class="acoes">
+        <button class="btn" type="submit" data-i18n="cadastro.salvar"></button>
+        <a class="btn btn-sec" href="plantas.html" data-i18n="cadastro.cancelar"></a>
+      </div>
+    </form>
+  </main>
+  <footer class="rodape"><p data-i18n="rodape"></p></footer>
+  <script src="js/config.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/cadastro.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/estilo.css">
+  <title>Canteiro</title>
+</head>
+<body data-titulo="titulo.plantas">
+  <main>
+    <div class="cabecalho-pagina"><h1 data-i18n="plantas.titulo"></h1><a id="novo" class="btn" href="cadastro.html" data-i18n="plantas.novo" hidden></a></div>
+    <div class="filtros">
+      <input id="busca" type="search" data-i18n-ph="plantas.busca" data-i18n-aria="plantas.busca">
+      <select id="categoria" data-i18n-aria="campo.categoria">
+        <option value="" data-i18n="plantas.todas"></option>
+        <option value="interior" data-i18n="cat.interior"></option>
+        <option value="jardim" data-i18n="cat.jardim"></option>
+        <option value="suculenta" data-i18n="cat.suculenta"></option>
+        <option value="frutifera" data-i18n="cat.frutifera"></option>
+        <option value="aromatica" data-i18n="cat.aromatica"></option>
+      </select>
+    </div>
+    <p id="msg" class="msg" role="status"></p>
+    <ul id="lista" class="cards"></ul>
+    <p id="vazio" class="msg" hidden data-i18n="plantas.vazio"></p>
+    <div class="paginacao">
+      <button id="anterior" type="button" class="btn btn-sec" data-i18n="plantas.anterior"></button>
+      <span id="pagina"></span>
+      <button id="proxima" type="button" class="btn btn-sec" data-i18n="plantas.proxima"></button>
+    </div>
+    <dialog id="detalhe">
+      <h2 id="detalhe-titulo"></h2>
+      <dl id="detalhe-lista"></dl>
+      <form method="dialog"><button class="btn" data-i18n="plantas.fechar"></button></form>
+    </dialog>
+  </main>
+  <footer class="rodape"><p data-i18n="rodape"></p></footer>
+  <script src="js/config.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/plantas.js"></script>
+</body>
+</html>
