@@ -1,3 +1,6 @@
+Trabalho feito por Marcus Vinícius Silva Thomaz & Murilo Fonseca Michelani
+
+
 # Canteiro — ERP web para viveiro de plantas
 
 Projeto da disciplina (Fatec Americana) que evolui exercício por exercício até a estrutura de um ERP web.
@@ -5,7 +8,22 @@ O tema é um viveiro: plantas, clientes, vendas, estoque e financeiro.
 
 ## Declaração de uso de IA
 
-Projeto feito com IA em algumas partes, corrigido com interação humana
+Este projeto foi desenvolvido com o auxílio da ferramenta de IA **Claude (Anthropic)**.
+
+**Partes geradas ou escritas com IA:**
+- A estrutura do projeto e o código da API (Python/Flask): rotas, validações, autenticação JWT, perfis de acesso e log de ações.
+- O esquema do banco de dados (SQL) e os dados de exemplo.
+- O front-end (HTML, CSS e JavaScript): páginas, layout responsivo e internacionalização (português e inglês).
+- Os testes automatizados e a documentação (`docs/`), incluindo o diagrama do banco.
+
+**O que eu fiz:**
+- Configurei o banco de dados PostgreSQL no Neon e conectei a API a ele.
+- Executei e testei o sistema, incluindo login, cadastros, perfis e idiomas.
+- Criei os usuários dos perfis e cadastrei dados de teste.
+- Publiquei o projeto no GitHub.
+- [ACRESCENTE aqui o que mais você alterou, estudou ou escreveu por conta própria.]
+
+Estou apto(a) a explicar o funcionamento de cada parte do código.
 
 ## Estrutura
 
