@@ -1,9 +1,7 @@
-Trabalho feito por Marcus Vinícius Silva Thomaz & Murilo Fonseca Michelani
-
+###Trabalho feito por Marcus Vinícius Silva Thomaz & Murilo Fonseca Michelani###
 
 # Canteiro — ERP web para viveiro de plantas
 
-Projeto da disciplina (Fatec Americana) que evolui exercício por exercício até a estrutura de um ERP web.
 O tema é um viveiro: plantas, clientes, vendas, estoque e financeiro.
 
 ## Declaração de uso de IA
