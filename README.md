@@ -14,14 +14,12 @@ Este projeto foi desenvolvido com o auxílio da ferramenta de IA **Claude (Anthr
 - O front-end (HTML, CSS e JavaScript): páginas, layout responsivo e internacionalização (português e inglês).
 - Os testes automatizados e a documentação (`docs/`), incluindo o diagrama do banco.
 
-**O que eu fiz:**
-- Configurei o banco de dados PostgreSQL no Neon e conectei a API a ele.
-- Executei e testei o sistema, incluindo login, cadastros, perfis e idiomas.
-- Criei os usuários dos perfis e cadastrei dados de teste.
-- Publiquei o projeto no GitHub.
-- [ACRESCENTE aqui o que mais você alterou, estudou ou escreveu por conta própria.]
-
-Estou apto(a) a explicar o funcionamento de cada parte do código.
+**O que nós fizemos:**
+- Configurar o banco de dados PostgreSQL no Neon e conectei a API a ele.
+- Executar e testei o sistema, incluindo login, cadastros, perfis e idiomas.
+- Criar os usuários dos perfis e cadastrei dados de teste.
+- Publicar o projeto no GitHub.
+- Correção de Erros eventuais na aplicação
 
 ## Estrutura
 
@@ -79,18 +77,6 @@ Variáveis: `DATABASE_URL`, `JWT_SECRET`, `ADMIN_SENHA`, `CORS_ORIGENS` (padrão
 
 Veja a tabela completa em `docs/arquitetura.md`. Resumo: **administrador** faz tudo; **vendedor** consulta, inclui e altera; **financeiro** só consulta (e vê o módulo Financeiro).
 
-## Andamento por exercício
-
-| Exercício | Situação |
-|-----------|----------|
-| EX1 Web responsiva | Feito: 4 páginas + ERP, HTML semântico, 3 breakpoints, grid/flexbox, menu hambúrguer, unidades relativas |
-| EX2 i18n web | Feito: pt-BR e inglês, seletor com escolha salva, datas/números/moeda e mensagens traduzidos |
-| EX3 Cadastro | Feito: Plantas e Clientes (CRUD, validação no cliente e no servidor, busca, paginação, SQL parametrizado) |
-| EX4 API | Feito: verbos e status HTTP, JSON padronizado, JWT, CORS, documentação (`docs/api.md`) |
-| EX5, EX7 Mobile | A fazer |
-| EX6 Web + API | Feito: front separado, token, login/expiração, carregamento, listar/detalhar/incluir/alterar/excluir |
-| EX8 Calculadora | Projeto à parte |
-| EX9 ERP | Estrutura pronta: arquitetura, diagrama ER e SQL, login com perfis, layout com menu lateral e painel, 2 cadastros completos, log de ações. Vendas, Estoque e Financeiro têm navegação, tela inicial e tabelas modeladas |
 
 ## Versionamento (Git)
 
